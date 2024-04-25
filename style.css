@@ -1,44 +1,114 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style:normal;
+    color: rgb(105, 105, 105);
+    background-color: rgba(214, 214, 214, 0.106);
+}
 
 header{
-    margin-top: 8rem;
-    margin-bottom: 20px; /* Ajusta el margen inferior para separar del menú */
-    display: flex;
+    width: auto;  
     justify-content: center;
-    width: 100%;
-    
 }
 
-h1{
-    font-size: 3rem;
-    padding-bottom: 10px;
-}
-
-.bio{
-    font-size: 1.5rem;
-}
-
-.menu{
-    text-align: right;
+.menu {
+    text-align: center; /* Centra el menú horizontalmente */
     position: fixed; /* Fija el menú en la parte superior */
     top: 0; /* Ajusta la posición desde la parte superior */
     width: 100%; /* Haz que el menú ocupe todo el ancho */
     padding: 10px 0; /* Añade relleno superior e inferior */
+    display:flex;
+    justify-content: end;
+}
+  
+.menu-opciones {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+  
+.menu-opcion {
+    display: inline-block; /* Permite que los elementos de la lista estén uno al lado del otro */
+    margin: 0 10px; /* Ajusta el margen entre los elementos */
 }
 
-.menu-opcion{
-    display: inline-block;
-    margin: 0 10px;
+#opcion-mail{
+    font-weight: 500;
+}
+
+.about-me{
+    background-color: rgba(192, 188, 188, 0.145);
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+    align-items: center;
+    text-align:left;
+    padding: 0em 3em;
 
 }
-  
-.bienvenida{
-  margin-top: 100px; /* Ajusta la distancia desde la parte superior */
-  
-}
-  
+
 .foto-perfil{
-    float:right;
-    width: 20rem;
+    width: 20em;
+    height: 20em;
     border-radius: 50%;
+    display:flex;
 }
 
+h1{
+    font-size: 3rem;
+    padding-bottom: 1%;
+    font-weight: 500;
+}
+
+h2{
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.menu-redes{
+    display:inline-flex;
+    justify-content: space-between;
+    
+
+}
+  
+
+
+
+
+  
+@media (max-width: 480px){
+    .menu-opcion{
+    display: none;
+  }
+
+  #opcion-mail{
+    display:flex;
+    justify-content: end;
+  }
+
+
+  .about-me{
+    display:flexbox;
+    flex-direction:column;
+    align-items: flex-start;
+    padding: 0 2em;
+    
+   }
+
+  .foto-perfil{
+    width: 10em;
+    height: 10em;
+} 
+}
+
+@media (max-width: 768px){
+    .menu-opcion{
+    display: none;
+}
+    #opcion-mail{
+    display:flex;
+    justify-content: end;
+}
+    
+
+}
