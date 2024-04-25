@@ -2,21 +2,21 @@ body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style:normal;
-    color: rgb(105, 105, 105);
+    color: rgb(112, 112, 112);
     background-color: rgba(214, 214, 214, 0.106);
 }
 
 header{
     width: auto;  
     justify-content: center;
+    
 }
 
 .menu {
-    text-align: center; /* Centra el menú horizontalmente */
     position: fixed; /* Fija el menú en la parte superior */
     top: 0; /* Ajusta la posición desde la parte superior */
-    width: 100%; /* Haz que el menú ocupe todo el ancho */
-    padding: 10px 0; /* Añade relleno superior e inferior */
+    width: 95%; /* Haz que el menú ocupe todo el ancho */
+    padding: 10px 0 ; /* Añade relleno superior e inferior */
     display:flex;
     justify-content: end;
 }
@@ -33,42 +33,38 @@ header{
 
 #opcion-mail{
     font-weight: 500;
+    color: black;
 }
 
 .about-me{
     background-color: rgba(192, 188, 188, 0.145);
-    display: flex;
+    display:flex;
     flex-direction: row-reverse;
     margin-top: 5rem;
     align-items: center;
-    text-align:left;
     padding: 0em 3em;
-
+    justify-content: space-around;
 }
 
 .foto-perfil{
-    width: 20em;
-    height: 20em;
+    width: 15em;
+    height: 15em;
     border-radius: 50%;
     display:flex;
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 3em;
     padding-bottom: 1%;
     font-weight: 500;
-}
-
-h2{
-    font-weight: 200;
-    font-size: 1.5rem;
+    color: black;
 }
 
 .menu-redes{
-    display:inline-flex;
-    justify-content: space-between;
-    
-
+    display: inline-flex;
+    align-items: flex-start;
+    padding-top: 0.5em;
+    color: black;
 }
   
 
