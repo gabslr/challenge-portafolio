@@ -32,7 +32,7 @@ header{
    
 }
   
-.menu-opcion {
+.menu-opcion,.menu-opcion-mail {
     display: inline-block; /* Permite que los elementos de la lista estén uno al lado del otro */
     margin: 0 10px; /* Ajusta el margen entre los elementos */
 
@@ -46,10 +46,69 @@ header{
 .menu-opcion button{
     border: none;
     background-color: transparent;
+    cursor: pointer;
     
 }
 
+.menu-opcion:hover{
+    transform: scale(1.1);
+}
 
+.menu-opcion-mail button{
+    border: none;
+    background-color: transparent;
+}
+
+.contenedor-skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 0;
+    background-color: rgba(128, 128, 128, 0.123);
+    padding: 3em;
+    margin-left: auto; /* Empuja el contenedor hacia el centro horizontal */
+    margin-right: auto; /* Empuja el contenedor hacia el centro horizontal */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+
+.contenedor-skills ul {
+    display: flex;
+    justify-items: center;
+}
+
+.contenedor-skills li {
+    display: inline-flex; /* Mostrar los elementos de la lista en línea */
+    flex-direction: column;
+    margin: 0 1em; /* Agregar espacio entre los elementos */
+    width: 15em;
+    height: 7em;
+    background-color: white;
+    justify-content: start;
+    padding-bottom: 1em;
+}
+
+.contenedor-skills .logo {
+    width: 3em; /* Ancho deseado para los logos */
+    height: 3em; /* Altura automática para mantener la proporción */
+   padding-top: 40px;
+   padding-bottom: 10px;
+   padding-left: 20px;
+}
+
+.contenedor-skills p{
+    font-size: 2em;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 1em;
+}
+
+span{
+    font-size: 20px;
+    padding-left: 20px;
+   
+}
 
 .about-me{
     display:flex;
@@ -58,7 +117,6 @@ header{
     align-items: center;
     padding: 0em 3em;
     justify-content: space-evenly;
-    
 }
 
 .foto-perfil{
@@ -84,7 +142,7 @@ h1{
     
 }
 
-.btn-github, .btn-linkedin, .btn-curriculum{
+.btn-github, .btn-linkedin, .btn-curriculum {
     display: flex;
     border: none;
     font-size: larger;
@@ -102,9 +160,7 @@ h1{
     margin-top: 4em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-   
-    
+    justify-content: center;  
 }
 
 .contenedor-sobremi h3{
@@ -112,14 +168,11 @@ h1{
     font-weight: 500;
     color: black;
     width: fit-content;
-
-   
 }
     
 .contenedor-sobremi p{
    width: fit-content;
    padding: 0 290px 0px;
-   
 }
 
 
@@ -131,42 +184,7 @@ h1{
 
   
 @media (max-width: 480px){
-    .menu-opcion{
-    display: none;
-  }
-    #opcion-mail{
-    display:flex;
-    justify-content: end;
-  }
-    .about-me{
-    display:flexbox;
-    flex-direction:column;
-    align-items: flex-start;
-    padding: 0 2em;
-}
-    .foto-perfil{
-    width: 10em;
-    height: 10em;
-}
-
-.contenedor-sobremi h3{
-    padding: 1% 5%;
-    display:flexbox;
-    flex-direction: initial;
-    justify-content:left;
-    width: fit-content;
-
   
-}
-.contenedor-sobremi p{
-   padding: 2% 5%;
-    display:flexbox;
-    flex-direction: initial;
-    justify-content:left;
-    width: fit-content;
-   
-}
-
 
 
 } 

@@ -20,14 +20,17 @@ botonCurriculum.addEventListener("click", function() {
 });
 
 
-// Seleccionamos el botón
-var btnIrASobremi = document.getElementById("btnSobremi");
 
-// Seleccionamos la sección a la que queremos navegar
-var seccionDestino = document.getElementById("destino-sobremi");
 
-// Agregamos un evento de clic al botón
-btnIrASobremi.addEventListener("click", function() {
-    // Navegamos a la sección utilizando scrollIntoView()
-    seccionDestino.scrollIntoView({ behavior: "smooth" }); // Scroll suave
+var btnSobremi = document.getElementById("btn-sobremi");
+btnSobremi.addEventListener("click", function() {
+    var seccionDestino = document.getElementById("destino-sobremi");
+    seccionDestino.scrollIntoView({ behavior: "smooth" });
 });
+
+
+
+
+
+
+
