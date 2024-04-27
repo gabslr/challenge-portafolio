@@ -21,10 +21,21 @@ botonCurriculum.addEventListener("click", function() {
 
 
 
-
 var btnSobremi = document.getElementById("btn-sobremi");
 btnSobremi.addEventListener("click", function() {
     var seccionDestino = document.getElementById("destino-sobremi");
+    seccionDestino.scrollIntoView({ behavior: "smooth" });
+});
+
+var btnSkills = document.getElementById("btn-skills");
+btnSkills.addEventListener("click", function() {
+    var seccionDestino = document.getElementById("destino-skills");
+    seccionDestino.scrollIntoView({ behavior: "smooth" });
+});
+
+var btnHobbies = document.getElementById("btn-hobbies");
+btnHobbies.addEventListener("click", function() {
+    var seccionDestino = document.getElementById("destino-hobbies");
     seccionDestino.scrollIntoView({ behavior: "smooth" });
 });
 

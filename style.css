@@ -60,9 +60,10 @@ header{
 }
 
 .contenedor-skills {
-    width: 100%;
+    
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     text-align: left;
     margin-top: 0;
     background-color: rgba(128, 128, 128, 0.123);
@@ -156,6 +157,7 @@ h1{
 }
 
 .contenedor-sobremi{
+
     background-color: rgba(0, 0, 255, 0.088);
     margin-top: 4em;
     display: flex;
@@ -167,13 +169,62 @@ h1{
     font-size: 2em;
     font-weight: 500;
     color: black;
-    width: fit-content;
+    margin-left: auto; /* Empuja el contenedor hacia el centro horizontal */
+    margin-right: auto;
 }
     
 .contenedor-sobremi p{
    width: fit-content;
    padding: 0 290px 0px;
+   margin-left: auto; /* Empuja el contenedor hacia el centro horizontal */
+    margin-right: auto;
 }
+
+.contenedor-hobbies{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 0;
+    background-color: rgba(128, 128, 128, 0.123);
+    padding: 3em;
+    margin-left: auto; /* Empuja el contenedor hacia el centro horizontal */
+    margin-right: auto; /* Empuja el contenedor hacia el centro horizontal */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.contenedor-hobbies ul {
+    display: flex;
+    justify-items: center;
+}
+
+.contenedor-hobbies li {
+    display: inline-flex; /* Mostrar los elementos de la lista en línea */
+    flex-direction: column;
+    margin: 0 1em; /* Agregar espacio entre los elementos */
+    width: 15em;
+    height: 7em;
+    background-color: white;
+    justify-content: start;
+    padding-bottom: 1em;
+}
+
+.contenedor-hobbies .logo {
+    width: 3em; /* Ancho deseado para los logos */
+    height: 3em; /* Altura automática para mantener la proporción */
+   padding-top: 40px;
+   padding-bottom: 10px;
+   padding-left: 20px;
+}
+
+.contenedor-hobbies p{
+    font-size: 2em;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 1em;
+}
+
+
 
 
 
@@ -200,6 +251,7 @@ h1{
     justify-content: end;
 }
 
+
  
 .contenedor-sobremi h3{
     padding: 1% 5%;
@@ -224,6 +276,8 @@ h1{
 
 
 @media (min-width: 768px){
+
+    
 
    
 
