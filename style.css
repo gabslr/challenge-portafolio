@@ -275,7 +275,7 @@ span{
 
 .contenedor-proyectos{
     margin-top: 0;
-    padding: 1em 3em;
+    padding: 1em 3em 5em;
     background-color: rgba(128, 128, 128, 0.123);
      display: flex; /* Activa el modelo de caja flexible en el contenedor */
     justify-content: center; /* Alinea los elementos hijos horizontalmente al centro */
