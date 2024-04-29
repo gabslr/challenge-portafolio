@@ -39,6 +39,18 @@ btnHobbies.addEventListener("click", function() {
     seccionDestino.scrollIntoView({ behavior: "smooth" });
 });
 
+var btnFormacion = document.getElementById("btn-formacion");
+btnFormacion.addEventListener("click", function() {
+    var seccionDestino = document.getElementById("destino-formacion");
+    seccionDestino.scrollIntoView({ behavior: "smooth" });
+});
+
+var btnProyectos = document.getElementById("btn-proyectos");
+btnProyectos.addEventListener("click", function() {
+    var seccionDestino = document.getElementById("destino-proyectos");
+    seccionDestino.scrollIntoView({ behavior: "smooth" });
+});
+
 
 
 
