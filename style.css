@@ -265,23 +265,50 @@ span{
 }
 
 .contenedor-proyectos{
-    display:flex;
-    flex-direction:column;
     margin-top: 0;
-    text-align:left; 
-    align-items: center;
-    padding: 3em 3em;
-    justify-content: space-evenly; 
+    padding: 5em 3em;
     background-color: rgba(128, 128, 128, 0.123);
 }
 
 .contenedor-proyectos h3{
     font-size: 2em;
     font-weight: 500;
-    color: black;
-    
-
+    color: black;text-align: center;
 }
+
+.imagen-encriptador{
+    width: 50%;
+    background-color: aqua;
+    margin-top: 4em;
+}
+
+
+.texto-proyectos p{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+    margin-top: 2em;
+    padding-bottom: 1.5em;
+}
+
+
+.texto-proyectos a{
+    font-size: 1.2em;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border: 2px solid blue; /* Agrega un borde azul alrededor del enlace */
+    padding: 5px 10px; /* Ajusta el relleno del botón según sea necesario */
+    display: inline-block; /* Asegura que el botón se muestre en línea */
+    margin-top: 0.5em; /* Ajusta el margen superior entre los enlaces */
+    margin-right: 1em;
+   
+}
+
+.demo{
+    color: white;
+    background-color: rgb(0, 0, 255);
+    
+}
+
 
 
 

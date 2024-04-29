@@ -3,7 +3,7 @@ var botonGithub = document.querySelector(".btn-github");
 
 // Agregamos un evento de clic al botón
 botonGithub.addEventListener("click", function() {
-    window.open("https://github.com", "_blank"); // Abre GitHub en una nueva pestaña
+    window.open("https://github.com/gabslr", "_blank"); // Abre GitHub en una nueva pestaña
 });
 
 
