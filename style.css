@@ -320,7 +320,8 @@ span{
 }
 
 .imagen-contacto{
-    width: 25%;
+   min-width: 15%;
+   max-width: 25%;
     margin-right: 20px;
 }
 
@@ -376,32 +377,14 @@ form{
 
 
 
-
-
-
-
-
 /*Tablet*/
 @media (max-width: 768px) {
     .menu-opcion:not(:last-child) {
         display: none;
     }
     .presentacion{
-        justify-content: center;
-        width: fit-content;
-    }
-}
-
-
-
-
-
-/*Mobile*/
-@media (max-width: 425px) {
-    .menu-opcion:not(:last-child) {
-        display: none;
-    }
-    .presentacion{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         width: fit-content;
     }
@@ -421,6 +404,64 @@ form{
         width: 100%;
         height: auto;
         
+    }
+
+    #mensaje {
+        width: 100%; /* Establece el ancho al 100% del contenedor padre */
+        height: auto; /* Permite que el textarea se ajuste automáticamente según el contenido */
+    }
+    
+    .imagen-contacto{
+        display: none;
+    }
+
+    form{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px){
+    .info-contacto{
+        width: fit-content;
+        
+        justify-content: space-evenly;
+      
+       
+    }
+}
+
+
+
+
+
+/*Mobile*/
+@media (max-width: 425px) {
+    .menu-opcion:not(:last-child) {
+        display: none;
+    }
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+    }
+
+
+
+    .contenedor-formulario, .info-contacto{
+        width: fit-content;
+        justify-content:flex-end;
+        width: auto;
+        height: auto;
+        padding: 0 1em 0 1em;
+
+    }
+
+     .contenedor-formulario input[type="text"],
+    .contenedor-formulario input[type="email"],
+    .contenedor-formulario input[type="asunto"]{
+        width: 100%;
+        height: auto;
         
     }
 
