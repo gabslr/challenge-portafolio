@@ -31,7 +31,7 @@ header{
 }
   
 .menu-opcion,.menu-opcion-mail {
-    display: inline-block; /* Permite que los elementos de la lista estén uno al lado del otro */
+    display: inline-block; 
     margin: 0 10px; /* Ajusta el margen entre los elementos */
 
 }
@@ -104,11 +104,9 @@ h1{
 
 .contenedor-sobremi{
     padding-top: 2em;
+    padding-bottom: 2em;
     background-color: rgba(0, 0, 255, 0.088);
-    margin-top: 4em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
+    margin-top: 4em; 
     text-align: center;
 }
 
@@ -116,142 +114,125 @@ h1{
     font-size: 2em;
     font-weight: 500;
     color: black;
-    margin-left: auto; /* Empuja el contenedor hacia el centro horizontal */
-    margin-right: auto;
 }
     
 .contenedor-sobremi p{
-   width: fit-content;
-   padding: 0 290px 0px;
-   margin-left: auto; /* Empuja el contenedor hacia el centro horizontal */
-    margin-right: auto;
+    padding-top: 1.5em;
 }
 
-.contenedor-skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: left;
-    margin-top: 0;
+.skills{
     background-color: rgba(128, 128, 128, 0.123);
-    padding: 3em;
-    margin-left: auto; /* Empuja el contenedor hacia el centro horizontal */
-    margin-right: auto; /* Empuja el contenedor hacia el centro horizontal */
-    align-items: center; /* Centra verticalmente el contenido */
-    padding-top: 5em;
+    padding: 2.5em 0 2.5em 0;
 }
 
-.contenedor-skills ul {
+.titulo-skills{
+    font-size: 2em;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+
+.contenedor-skills{
+    padding-top: 2em;
     display: flex;
-    justify-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
 }
 
-.contenedor-skills li {
-    display: inline-flex; /* Mostrar los elementos de la lista en línea */
-    flex-direction: column;
-    margin: 0 1em; /* Agregar espacio entre los elementos */
-    width: 15em;
-    height: 7em;
-    background-color: white;
-    justify-content: start;
-    padding-bottom: 1em;
+.contenedor-skills ul{
+  background-color: white;
+  width: 8em;
+  height: 8em;
+}
+
+.contenedor-skills li{
+    padding: 3.5em 0.5em;
+}
+
+
+span{
+    display: flex;
+    font-size: 20px;
 }
 
 .contenedor-skills .logo {
-    width: 3em; /* Ancho deseado para los logos */
-    height: 3em; /* Altura automática para mantener la proporción */
-   padding-top: 40px;
-   padding-bottom: 10px;
-   padding-left: 20px;
+    width: 2.5em; /* Ancho deseado para los logos */
+    height: 2.5em; /* Altura automática para mantener la proporción */
+    display: flex;
 }
 
-.contenedor-skills p{
+.hobbies{
+    background-color: rgba(128, 128, 128, 0.123);
+    padding: 0.5em 0 2.5em 0;
+}
+
+.titulo-hobbies{
     font-size: 2em;
     font-weight: 500;
     color: black;
-    padding-bottom: 1em;
-}
-
-span{
-    font-size: 20px;
-    padding-left: 20px; 
+    text-align: center;
 }
 
 .contenedor-hobbies{
+    padding-top: 2em;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: left;
-    margin-top: 0;
-    background-color: rgba(128, 128, 128, 0.123);
-    padding: 3em;
-    padding-bottom: 5em;
-    margin-left: auto; /* Empuja el contenedor hacia el centro horizontal */
-    margin-right: auto; /* Empuja el contenedor hacia el centro horizontal */
-    align-items: center; /* Centra verticalmente el contenido */
-    
+    justify-content: space-evenly;
+    gap: 1em;
 }
 
-.contenedor-hobbies ul {
-    display: flex;
-    justify-items: center;
+.contenedor-hobbies ul{
+  background-color: white;
+  width: 8em;
+  height: 8em;
 }
 
-.contenedor-hobbies li {
-    display: inline-flex; /* Mostrar los elementos de la lista en línea */
-    flex-direction: column;
-    margin: 0 1em; /* Agregar espacio entre los elementos */
-    width: 15em;
-    height: 7em;
-    background-color: white;
-    justify-content: start;
-    padding-bottom: 1em;
+.contenedor-hobbies li{
+    padding: 3.5em 0.5em;
+}
+
+
+span{
+    display: flex;
+    font-size: 20px;
 }
 
 .contenedor-hobbies .logo {
-    width: 3em; /* Ancho deseado para los logos */
-    height: 3em; /* Altura automática para mantener la proporción */
-   padding-top: 40px;
-   padding-bottom: 10px;
-   padding-left: 20px;
+    width: 2.5em; 
+    height: 2.5em; 
+   display: flex;
 }
 
-.contenedor-hobbies p{
-    font-size: 2em;
-    font-weight: 500;
-    color: black;
-    padding-bottom: 1em;
-}
 
-.contenedor-formacion{
+
+.formacion{
     display:flex;
     flex-direction:column;
     margin-top: 0;
     text-align:left; 
     align-items: center;
-    padding: 3em 3em;
     justify-content: space-evenly;
     background-color:rgba(0, 0, 255, 0.088) ;
+    padding: 2.5em 0 2.5em 0;
 }
 
-.contenedor-formacion h3{
+.titulo-formacion{
     font-size: 2em;
     font-weight: 500;
-    padding-top: 0.5em;
-    padding-bottom: 1em;
     color: black;
+    text-align: center;
+    padding-bottom: 0.5em;
 }
 
+
 .logo-one{
-    width: 10%;
+    width: 20%;
     padding: 3em;
     margin-top: 1.5em;
     margin-bottom: 1em ;
     background-color: rgb(255, 255, 255);
 }
 
-
-.contenedor-formacion h4{
+.contenedor-texto h3{
     font-size: 1.5em;
     padding-bottom: 10px;
     font-weight: 500;
@@ -259,7 +240,7 @@ span{
     text-align: left; 
 }
 
-.contenedor-formacion p{
+.contenedor-texto p{
     font-size: 1.2em;
     text-align: left; 
 }
@@ -270,12 +251,12 @@ span{
     color: black;
     background-color:rgba(128, 128, 128, 0.123);
     text-align: center;
-    padding-top: 2em;
+    padding-top: 1.5em;
 }
 
 .contenedor-proyectos{
     margin-top: 0;
-    padding: 1em 3em 5em;
+    padding: 1em 3em 4em;
     background-color: rgba(128, 128, 128, 0.123);
      display: flex; /* Activa el modelo de caja flexible en el contenedor */
     justify-content: center; /* Alinea los elementos hijos horizontalmente al centro */
@@ -400,76 +381,50 @@ form{
 
 
 
-  
-
-
-
-
-  
-@media (max-width: 480px){
-  
-
-
-} 
-
-
-
-@media (max-width: 768px){
-    .menu-opcion{
-    display: none;
-}
-    #opcion-mail{
-    display:flex;
-    justify-content: end;
-}
-
-
- 
-.contenedor-sobremi h3{
-    padding: 1% 5%;
-    display:flexbox;
-    flex-direction: initial;
-    justify-content:left;
-    width: fit-content;
-
-  
-}
-.contenedor-sobremi p{
-   padding: 2% 5%;
-    display:flexbox;
-    flex-direction: initial;
-    justify-content:left;
-    width: fit-content;
-   
-
-}
-
-}
-
-
-@media (min-width: 768px){
-
-    
-
-   
-
-    .contenedor-sobremi h3{
-        padding: 1% 5%;
-        display:flexbox;
-        flex-direction: initial;
-        justify-content:left;
+/*Tablet*/
+@media (max-width: 768px) {
+    .menu-opcion:not(:last-child) {
+        display: none;
+    }
+    .presentacion{
+        justify-content: center;
         width: fit-content;
-   
-      
+    }
+}
+
+
+
+
+
+/*Mobile*/
+@media (max-width: 425px) {
+    .menu-opcion:not(:last-child) {
+        display: none;
+    }
+    .presentacion{
+        justify-content: center;
+        width: fit-content;
+    }
+
+    .contenedor-sobremi{
+        
     }
     .contenedor-sobremi p{
-       padding: 2% 5%;
-        display:flexbox;
-        flex-direction: initial;
-        justify-content:left;
-        width: fit-content;
+        
        
     }
-}
+
+    .contenedor-skills{
+        /* width: max-content; */
+    }
+
+    .contenedor-hobbies{
+        
+    }
+
+    .contenedor-formacion{
+       
+    }
+    
 
 
