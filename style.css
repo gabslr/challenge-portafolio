@@ -21,7 +21,6 @@ header{
     padding: 10px 0 ; /* Añade relleno superior e inferior */
     display:flex;
     justify-content: end;
-    display: flex;
 }
   
 .menu-opciones {
@@ -103,10 +102,13 @@ h1{
 }
 
 .contenedor-sobremi{
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding: 2em;
     background-color: rgba(0, 0, 255, 0.088);
     margin-top: 4em; 
+    text-align:justify;
+}
+
+.titulo-sobremi{
     text-align: center;
 }
 
@@ -122,7 +124,7 @@ h1{
 
 .skills{
     background-color: rgba(128, 128, 128, 0.123);
-    padding: 2.5em 0 2.5em 0;
+    padding: 2.5em 1em 2.5em 1em;
 }
 
 .titulo-skills{
@@ -163,7 +165,7 @@ span{
 
 .hobbies{
     background-color: rgba(128, 128, 128, 0.123);
-    padding: 0.5em 0 2.5em 0;
+    padding: 0.5em 1em 2.5em 1em;
 }
 
 .titulo-hobbies{
@@ -256,7 +258,7 @@ span{
 
 .contenedor-proyectos{
     margin-top: 0;
-    padding: 1em 3em 4em;
+    padding: 3em 4em 4em 4em;
     background-color: rgba(128, 128, 128, 0.123);
      display: flex; /* Activa el modelo de caja flexible en el contenedor */
     justify-content: center; /* Alinea los elementos hijos horizontalmente al centro */
@@ -272,7 +274,9 @@ span{
 
 .imagen-encriptador{
     width: 50%;
-    margin-top: 4em;
+    margin-top: 2em;
+   justify-content:space-evenly;
+
 }
 
 .texto-proyectos {
@@ -293,12 +297,10 @@ span{
 .texto-proyectos a{
     font-size: 1.2em;
     text-decoration: none; /* Quita el subrayado del enlace */
-    border: 2px solid blue; /* Agrega un borde azul alrededor del enlace */
+    border: 1px solid blue; /* Agrega un borde azul alrededor del enlace */
     padding: 10px 15px; /* Ajusta el relleno del botón según sea necesario */
     display: inline-block; /* Asegura que el botón se muestre en línea */
-    margin-top: 0.5em; /* Ajusta el margen superior entre los enlaces */
-    margin-right: 1em;
-   
+    margin-top: 0.5em; /* Ajusta el margen superior entre los enlaces */ 
 }
 
 .repo{
@@ -329,6 +331,7 @@ span{
     font-size: 2em;
     font-weight: 500;
     color: black;
+    padding-top: 1.5em;
     padding-bottom: 0.5em;
 }
 
@@ -369,7 +372,7 @@ form{
 .contenedor-formulario input[type="email"]::placeholder,
 .contenedor-formulario input[type="asunto"]::placeholder,
 .contenedor-formulario textarea::placeholder {
-    color: blue;
+    color: rgba(0, 0, 255, 0.473);
 }
 
 
@@ -379,6 +382,18 @@ form{
 
 /*Tablet*/
 @media (max-width: 768px) {
+
+    .menu{
+        position:absolute;
+        justify-self: flex-end;
+        justify-content: end;
+        justify-items: end;
+    }
+
+    #opcion-mail{
+      
+      }
+
     .menu-opcion:not(:last-child) {
         display: none;
     }
@@ -388,6 +403,27 @@ form{
         justify-content: center;
         width: fit-content;
     }
+
+    .contenedor-proyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imagen-encriptador{
+        width: 100%;
+    }
+
+    .texto-proyectos{
+        text-align: center;
+        padding: 0;
+    }
+
+    .texto-proyectos a{
+        display:table-cell;
+        flex-direction: row;
+    }
+
 
     .contenedor-formulario, .info-contacto{
         width: fit-content;
@@ -436,6 +472,20 @@ form{
 
 /*Mobile*/
 @media (max-width: 425px) {
+
+    .menu{
+        position:none;
+        justify-self: flex-end;
+        justify-content: end;
+        justify-items: end;
+    }
+
+    #opcion-mail{
+     
+      justify-content: space-evenly;
+      width: fit-content;
+    }
+
     .menu-opcion:not(:last-child) {
         display: none;
     }
@@ -444,6 +494,26 @@ form{
         flex-direction: column;
         justify-content: center;
         width: fit-content;
+    }
+
+    .contenedor-proyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imagen-encriptador{
+        width: 100%;
+    }
+
+    .texto-proyectos{
+        text-align: center;
+        padding: 0;
+    }
+
+    .texto-proyectos a{
+        display:table-cell;
+        flex-direction: row;
     }
 
 
