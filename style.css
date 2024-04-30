@@ -406,25 +406,36 @@ form{
         width: fit-content;
     }
 
-    .contenedor-sobremi{
-        
-    }
-    .contenedor-sobremi p{
-        
-       
+    .contenedor-formulario, .info-contacto{
+        width: fit-content;
+        justify-content:flex-end;
+        width: auto;
+        height: auto;
+        padding: 0 1em 0 1em;
+
     }
 
-    .contenedor-skills{
-        /* width: max-content; */
-    }
-
-    .contenedor-hobbies{
+     .contenedor-formulario input[type="text"],
+    .contenedor-formulario input[type="email"],
+    .contenedor-formulario input[type="asunto"]{
+        width: 100%;
+        height: auto;
+        
         
     }
 
-    .contenedor-formacion{
-       
+    #mensaje {
+        width: 100%; /* Establece el ancho al 100% del contenedor padre */
+        height: auto; /* Permite que el textarea se ajuste automáticamente según el contenido */
     }
     
+    .imagen-contacto{
+        display: none;
+    }
+
+    form{
+        text-align: center;
+    }
+}
 
 
