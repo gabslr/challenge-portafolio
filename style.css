@@ -15,7 +15,7 @@ header{
 }
 
 .menu {
-    position: fixed; /* Fija el menú en la parte superior */
+    /* position: fixed; /* Fija el menú en la parte superior */
     top: 0; /* Ajusta la posición desde la parte superior */
     width: 95%; /* Haz que el menú ocupe todo el ancho */
     padding: 10px 0 ; /* Añade relleno superior e inferior */
@@ -312,31 +312,30 @@ span{
     background-color: rgb(0, 0, 255); 
 }
 
-.contenedor-formulario{
-    background-color: rgba(0, 0, 255, 0.088);
-    padding-top: 5em;
-    padding-bottom: 5em;
+.contacto{
+    background-color: rgba(0, 0, 255, 0.088);  
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center; /* Centra horizontalmente los elementos */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em
 }
 
-.imagen-contacto{
-   min-width: 15%;
-   max-width: 25%;
-    margin-right: 20px;
-}
-
-.info-contacto h3{
+.titulo-contacto{
+    padding-top: 1.5em;
+    color: black;
     font-size: 2em;
     font-weight: 500;
+}
+
+.texto-contacto{
     color: black;
     padding-top: 1.5em;
     padding-bottom: 0.5em;
 }
 
-.info-contacto p{
-    color: black;
+.tituloc-textoc{
+    margin-left: 1em;
 }
 
 form{
@@ -355,24 +354,31 @@ form{
     background-color: blue;
 }
 
-.contenedor-formulario input[type="text"],
-.contenedor-formulario input[type="email"],
-.contenedor-formulario input[type="asunto"]{
-    width: 50em; 
-    height: 7em; 
+.texto-contacto input[type="text"],
+.texto-contacto input[type="email"],
+.texto-contacto input[type="asunto"],
+.texto-contacto textarea{
+    width: 40em; 
+    height: 7em;  
     border: none;
     
 }
 
-.contenedor-formulario textarea{
+.texto-contacto textarea{
     border: none;
 }
 
-.contenedor-formulario input[type="text"]::placeholder,
-.contenedor-formulario input[type="email"]::placeholder,
-.contenedor-formulario input[type="asunto"]::placeholder,
-.contenedor-formulario textarea::placeholder {
+.texto-contacto input[type="text"]::placeholder,
+.texto-contacto input[type="email"]::placeholder,
+.texto-contacto input[type="asunto"]::placeholder,
+.texto-contacto textarea::placeholder {
     color: rgba(0, 0, 255, 0.473);
+}
+
+footer{
+    text-align: center;
+    background-color:white;
+    padding: 2em;
 }
 
 
@@ -389,10 +395,6 @@ form{
         justify-content: end;
         justify-items: end;
     }
-
-    #opcion-mail{
-      
-      }
 
     .menu-opcion:not(:last-child) {
         display: none;
@@ -424,47 +426,20 @@ form{
         flex-direction: row;
     }
 
-
-    .contenedor-formulario, .info-contacto{
-        width: fit-content;
-        justify-content:flex-end;
-        width: auto;
-        height: auto;
-        padding: 0 1em 0 1em;
-
-    }
-
-     .contenedor-formulario input[type="text"],
-    .contenedor-formulario input[type="email"],
-    .contenedor-formulario input[type="asunto"]{
+    .texto-contacto input[type="text"],
+    .texto-contacto input[type="email"],
+    .texto-contacto input[type="asunto"]{
         width: 100%;
-        height: auto;
-        
+        height: auto;  
     }
 
-    #mensaje {
-        width: 100%; /* Establece el ancho al 100% del contenedor padre */
-        height: auto; /* Permite que el textarea se ajuste automáticamente según el contenido */
-    }
-    
+   
     .imagen-contacto{
         display: none;
     }
 
-    form{
-        text-align: center;
-    }
 }
 
-@media (min-width: 768px){
-    .info-contacto{
-        width: fit-content;
-        
-        justify-content: space-evenly;
-      
-       
-    }
-}
 
 
 
@@ -502,10 +477,6 @@ form{
         justify-content: center;
     }
 
-    .imagen-encriptador{
-        width: 100%;
-    }
-
     .texto-proyectos{
         text-align: center;
         padding: 0;
@@ -516,37 +487,25 @@ form{
         flex-direction: row;
     }
 
-
-
-    .contenedor-formulario, .info-contacto{
-        width: fit-content;
-        justify-content:flex-end;
-        width: auto;
-        height: auto;
-        padding: 0 1em 0 1em;
-
+    .contacto{
+        display: block;
     }
 
-     .contenedor-formulario input[type="text"],
-    .contenedor-formulario input[type="email"],
-    .contenedor-formulario input[type="asunto"]{
-        width: 100%;
-        height: auto;
+    .texto-contacto input[type="text"],
+    .texto-contacto input[type="email"],
+    .texto-contacto input[type="asunto"],
+    .texto-contacto textarea[type="mensaje"]{
+        width: 90%;
+        height: auto; 
+        justify-content: space-evenly;
         
-    }
-
-    #mensaje {
-        width: 100%; /* Establece el ancho al 100% del contenedor padre */
-        height: auto; /* Permite que el textarea se ajuste automáticamente según el contenido */
     }
     
     .imagen-contacto{
         display: none;
     }
 
-    form{
-        text-align: center;
-    }
+   
 }
 
 
